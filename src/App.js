@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-
+import './components/avg';
+import './components/prime';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     Enter the numbers
+     <input type='text' id='t1'></input>
+     <avg></avg><br></br>
+     <button id='b1'>AVG</button>&nbsp;&nbsp;
+     <prime></prime>
+     <button id='b2'>PRIME</button>&nbsp;&nbsp;
+     <fibo></fibo>
+     <button id='b3'>FIBO</button>
     </div>
+    
   );
 }
 
